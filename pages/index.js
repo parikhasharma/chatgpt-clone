@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRobot } from "@fortawesome/free-solid-svg-icons";
 
 
+
+
+
 export default function Home() {
   const { isLoading, error, user } = useUser();
 
@@ -15,6 +18,8 @@ export default function Home() {
   else if (error){
     return <div>{error.message}</div>;
   } 
+  
+  
 
   return (
     <>
